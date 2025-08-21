@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Método Pipoca Viral — Página de Vendas</title>
+  <!-- Favicon padrão -->
+<link rel="icon" type="image/png" href="/Screenshot 2025-08-20 163349.png">
+
+<!-- Para navegadores antigos -->
+<link rel="shortcut icon" href="/Screenshot 2025-08-20 163349.png" type="image/x-icon">
+
+<!-- Para dispositivos Apple -->
+<link rel="apple-touch-icon" sizes="180x180" href="/Screenshot 2025-08-20 163349.png">
+  <meta name="description" content="Aprenda a vender a pipoca gourmet que viralizou no TikTok e transforme em renda extra real. Método passo a passo com bônus inclusos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fff;
+      --text:#1f2937;      /* cinza-900 */
+      --muted:#6b7280;     /* cinza-500 */
+      --brand:#ef4444;     /* vermelho-500 */
+      --brand-dark:#b91c1c;/* vermelho-700 */
+      --accent:#f59e0b;    /* amarelo-500 */
+      --card:#f9fafb;      /* cinza-50 */
+      --ring: rgba(239,68,68,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+    img{max-width:100%;display:block;border-radius:16px}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .badge{display:inline-flex;gap:8px;align-items:center;background:#fff;color:var(--brand);border:1px solid var(--brand);padding:8px 12px;border-radius:999px;font-weight:600;font-size:.9rem}
+    .btn{display:inline-block;background:var(--brand);color:#fff;padding:16px 24px;border-radius:12px;font-weight:800;letter-spacing:.2px;box-shadow:0 8px 30px var(--ring);transition:.18s transform ease,.18s box-shadow ease}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 12px 40px var(--ring)}
+    .btn.alt{background:#fff;color:var(--brand);border:2px solid var(--brand)}
+    .section{padding:56px 0}
+    .grid{display:grid;gap:24px}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .pill{background:var(--card);border:1px solid #e5e7eb;border-radius:16px;padding:18px}
+    .muted{color:var(--muted)}
+    .hero{position:relative;isolation:isolate;background:linear-gradient(180deg, #fff 0%, #fff7e6 100%)}
+    .hero-wrap{display:grid;gap:32px;align-items:center}
+    .hero h1{font-weight:900;line-height:1.1;margin:0;font-size:clamp(2rem,3.2vw,3rem)}
+    .hero p{font-size:clamp(1rem,1.2vw,1.15rem);color:#374151;margin:6px 0 0}
+    .hero-media{position:relative;aspect-ratio:16/10;background:#00000010;border:1px dashed #e5e7eb;border-radius:20px;display:grid;place-items:center}
+    .hero-media small{color:var(--muted)}
+    .kpis{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px}
+    .kpi{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:10px 14px;font-weight:700}
+    h2{font-size:clamp(1.5rem,2.2vw,2rem);line-height:1.2;margin:0 0 16px}
+    h3{margin:0 0 8px}
+    .bullets{display:grid;gap:14px}
+    .bullets .item{display:grid;grid-template-columns:28px 1fr;gap:12px;align-items:start}
+    .bullets .dot{width:28px;height:28px;border-radius:50%;background:var(--accent);display:grid;place-items:center;color:#1f2937;font-weight:900}
+    .proof-cards{display:grid;gap:16px}
+    .proof{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:18px}
+    .stat{font-size:1.25rem;font-weight:800}
+    .offer{background:linear-gradient(180deg,#fff 0%,#ffe7d1 100%);border:1px solid #fde68a;padding:24px;border-radius:16px}
+    .bonus{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:18px}
+    details{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px}
+    summary{cursor:pointer;font-weight:700}
+    .cta-center{text-align:center}
+    .footer{background:#0b0b0c;color:#e5e7eb;padding:28px 0;margin-top:40px}
+    @media (min-width:900px){
+      .hero-wrap{grid-template-columns:1.1fr .9fr}
+      .proof-cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+    }
+    .offer-card{
+  background: linear-gradient(180deg,#fff 0%, #fff8ef 100%);
+  border:1px solid #FDE68A;
+  border-radius:18px;
+  padding:24px;
+  box-shadow:0 8px 20px rgba(249,115,22,.08);
+}
+
+/* Título centralizado e destacado */
+.offer-title{
+  display: table;
+  margin: 0 auto 22px;
+  padding: 6px 18px;
+  background: #FEF3C7; /* amarelo suave */
+  border-radius: 8px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #111827;
+}
+
+/* Lista com checks verdes */
+.checks{list-style:none; padding:0; margin:0 0 20px}
+.checks li{
+  position:relative;
+  padding-left:28px;
+  margin:10px 0;
+  line-height:1.6;
+}
+.checks li::before{
+  content:"✓";
+  position:absolute;
+  left:0; top:.1rem;
+  color:#16A34A;
+  background:#DCFCE7;
+  width:20px; height:20px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-weight:800;
+  font-size:12px;
+}
+
+/* Preço */
+.price-highlight{
+  text-align:center;
+  margin:24px 0;
+}
+.price-highlight p{
+  margin:6px 0;
+  font-size:1.1rem;
+  font-weight:600;
+}
+.price-highlight .old{
+  color:#9CA3AF;
+  text-decoration:line-through;
+  font-size:1.3rem;
+  margin-right:12px;
+}
+.price-highlight .now{
+  color:#16A34A;
+  font-size:2rem;
+  font-weight:900;
+  background:#DCFCE7;
+  padding:4px 14px;
+  border-radius:8px;
+}
+
+/* Microcopy e garantia */
+.micro{
+  color:#6B7280;
+  margin:0 0 14px;
+  text-align:center;
+}
+.guarantee{
+  color:#6B7280;
+  margin:6px 0 0;
+  text-align:center;
+}
+
+/* CTAs */
+.cta-row{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap;
+  margin:20px 0;
+}
+.btn{
+  display:inline-block;
+  padding:16px 22px;
+  border-radius:12px;
+  font-weight:800;
+  text-decoration:none;
+  transition:.2s;
+  font-size:1rem;
+  text-align:center;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn{
+  background:#EF4444;
+  color:#fff;
+  box-shadow:0 6px 14px rgba(239,68,68,.3);
+}
+.btn.alt{
+  background:#fff;
+  color:#EF4444;
+  border:2px solid #EF4444;
+  box-shadow:0 6px 14px rgba(239,68,68,.15);
+}
+.btn.alt:hover{background:#FFF5F5}
+
+/* Título */
+.bonus-title{
+  text-align:center;
+  font-size:2rem;
+  font-weight:900;
+  margin-bottom:22px;
+}
+.bonus-title span{color:#16A34A; font-weight:800}
+
+/* Grid responsivo */
+.bonus-grid{
+  display:grid;
+  gap:18px;
+}
+@media (min-width:900px){
+  .bonus-grid{
+    grid-template-columns:1fr 1fr; /* 2 cards por linha */
+  }
+}
+
+/* Card base */
+.bonus-card{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:16px;
+  align-items:center;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:16px;
+  padding:16px;
+  box-shadow:0 6px 18px rgba(0,0,0,.04);
+  transition:.18s transform ease, .18s box-shadow ease;
+}
+.bonus-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 26px rgba(0,0,0,.06);
+}
+
+/* Alternância imagem/texto no desktop */
+@media (min-width:900px){
+  .bonus-card.alt{ grid-template-columns:1fr 120px; }
+  .bonus-card.alt .bonus-media{ order:2; }
+  .bonus-card.alt .bonus-content{ order:1; text-align:right; }
+}
+
+/* Imagem */
+.bonus-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+/* Conteúdo */
+.bonus-content h3{
+  margin:0 0 6px;
+  font-size:1.1rem;
+}
+.bonus-content p{
+  margin:0;
+  color:#6B7280;
+  line-height:1.55;
+}
+
+/* Nota de valor */
+.bonus-note{
+  text-align:center;
+  margin-top:16px;
+  color:#374151;
+}
+.bonus-note strong:nth-child(2){
+  color:#EF4444;
+}
+.bonus-grid {
+  display: grid;
+  gap: 20px;
+  justify-content: center; /* centraliza os itens */
+}
+
+@media (min-width: 900px) {
+  .bonus-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas fixas no desktop */
+    max-width: 900px; /* limita largura pra centralizar bonito */
+    margin: 0 auto; /* centraliza a grid */
+  }
+
+  /* Faz o último card ocupar o centro sozinho */
+  .bonus-grid .bonus-card:last-child {
+    grid-column: 1 / span 2;
+    max-width: 450px;
+    justify-self: center;
+  }
+}
+.bonus-cta {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.btn.big {
+  background: #ef4444; /* vermelho chamativo */
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 16px 32px;
+  border-radius: 8px;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn.big:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
+/* Título e subtítulo */
+.proof-title{
+  text-align:center;
+  font-size:2rem;
+  font-weight:900;
+  margin:0 0 6px;
+}
+.proof-sub{
+  text-align:center;
+  color:#6B7280;
+  margin:0 0 18px;
+}
+
+/* Track: no mobile vira carrossel horizontal com snap */
+.proof-track{
+  display:grid;
+  gap:16px;
+}
+@media (max-width: 899px){
+  .proof-track{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap:14px;
+    padding:4px 2px;
+  }
+  .proof-track .social-card{
+    min-width: 85%;
+    scroll-snap-align: center;
+  }
+}
+
+/* No desktop: 3 colunas */
+@media (min-width:900px){
+  .proof-track{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+  }
+}
+
+/* Card social */
+.social-card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,.04);
+  transition:.18s transform ease, .18s box-shadow ease;
+}
+.social-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 28px rgba(0,0,0,.06);
+}
+
+/* Imagem sempre grande e legível */
+.media{
+  position:relative;
+  aspect-ratio: 4/5;            /* mantém proporção de print vertical */
+  background:#f3f4f6;
+}
+.media img{
+  width:100%; height:100%;
+  object-fit:cover; object-position: center;
+  display:block;
+}
+
+/* Badges sobre a imagem */
+.badges{
+  position:absolute;
+  left:10px; bottom:10px;
+  display:flex; gap:8px; flex-wrap:wrap;
+}
+.badge{
+  background:rgba(17,24,39,.85);
+  color:#fff;
+  font-size:.8rem;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.2);
+}
+
+/* Conteúdo do card */
+.content{
+  padding:12px 14px 16px;
+}
+.quote{
+  margin:0 0 4px;
+  font-weight:700;
+  line-height:1.45;
+}
+.meta{
+  margin:0;
+  color:#6B7280;
+  font-size:.92rem;
+}
+
+/* CTA opcional abaixo da seção */
+.proof-cta{ text-align:center; margin-top:18px }
+.btn.big{
+  background:#ef4444; color:#fff;
+  font-size:1.1rem; font-weight:800;
+  padding:14px 24px; border-radius:10px;
+  display:inline-block; text-decoration:none;
+  box-shadow:0 8px 22px rgba(239,68,68,.28);
+  transition:.2s;
+}
+.btn.big:hover{ transform:translateY(-2px) }
+/* Título/sub */
+.sp-title{
+  text-align:center;
+  font-weight:900;
+  font-size:clamp(1.4rem,2.4vw,2rem);
+  margin:0 0 6px;
+}
+.sp-sub{
+  text-align:center;
+  color:#6B7280;
+  margin:0 0 18px;
+}
+
+/* Track: carrossel no mobile, grid no desktop */
+.sp-track{
+  display:grid;
+  gap:16px;
+}
+@media (max-width: 899px){
+  .sp-track{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    gap:14px;
+    padding:4px 2px;
+  }
+  .sp-track::-webkit-scrollbar{ display:none; }
+  .sp-card{ flex:0 0 82%; scroll-snap-align:center; }
+}
+@media (min-width:900px){
+  .sp-track{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
+
+/* Card */
+.sp-card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,.04);
+  transition:.18s transform,.18s box-shadow;
+}
+.sp-card:hover{ transform:translateY(-2px); box-shadow:0 12px 28px rgba(0,0,0,.06); }
+
+/* Print/foto grande e legível */
+.sp-media{
+  position:relative;
+  aspect-ratio:4/5;          /* bom para prints verticais */
+  background:#f3f4f6;
+}
+.sp-media img{
+  width:100%; height:100%;
+  object-fit:cover;          /* use 'contain' se quiser ver o print completo sem corte */
+  object-position:center;
+  display:block;
+}
+
+/* Conteúdo */
+.sp-content{ padding:12px 14px 16px; }
+.sp-quote{
+  margin:0 0 6px;
+  font-weight:800;
+  line-height:1.45;
+  font-size:1.02rem;
+}
+.sp-meta{
+  margin:0;
+  color:#6B7280;
+  font-size:.92rem;
+}
+
+/* CTA abaixo da seção */
+.sp-cta{ text-align:center; margin-top:18px; }
+.btn.big{
+  background:#ef4444; color:#fff; font-size:1.1rem; font-weight:800;
+  padding:14px 24px; border-radius:10px; display:inline-block; text-decoration:none;
+  box-shadow:0 8px 22px rgba(239,68,68,.28); transition:.2s;
+}
+.btn.big:hover{ transform:translateY(-2px); }
+.feedback-wall{
+  padding:56px 0;
+  background:#f9fafb; /* fundo neutro claro */
+}
+
+.fb-title{
+  text-align:center;
+  font-weight:800;
+  font-size:clamp(1.6rem,3vw,2.2rem);
+  line-height:1.3;
+  margin:0 0 8px;
+  color:#111827; /* cinza-900 */
+}
+.fb-title span{ color:#16a34a; } /* destaque na cor verde */
+
+.fb-hint{
+  text-align:center;
+  margin:0 0 20px;
+  opacity:.7;
+  font-size:.95rem;
+}
+
+/* ===== Carrossel mobile ===== */
+.fb-track{
+  display:flex;
+  gap:16px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  padding:4px 6px;
+}
+.fb-track::-webkit-scrollbar{ display:none; }
+
+.fb-card{
+  flex:0 0 80%; /* largura slide no mobile */
+  scroll-snap-align:center;
+  background:#fff;
+  border:1px solid #e5e7eb; /* cinza-200 */
+  border-radius:14px;
+  padding:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,.06);
+}
+.fb-card img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:10px;
+}
+
+/* ===== Grid desktop ===== */
+@media (min-width:900px){
+  .fb-hint{ display:none; }
+  .fb-track{
+    display:grid;
+    gap:22px;
+    overflow:visible;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items:start;
+  }
+  .fb-card{ flex:unset; }
+}
+
+/* Destaque: ocupa 2 colunas no desktop */
+@media (min-width:1100px){
+  .fb-card.fb-wide{ grid-column: span 2; }
+}
+
+/* CTA */
+.fb-cta{ text-align:center; margin-top:28px; }
+.btn.big{
+  background:#ef4444; /* vermelho chamativo */
+  color:#fff;
+  font-size:1.12rem;
+  font-weight:700;
+  padding:14px 24px;
+  border-radius:12px;
+  text-decoration:none;
+  display:inline-block;
+  box-shadow:0 8px 18px rgba(239,68,68,.35);
+  transition:.2s;
+}
+.btn.big:hover{ transform:translateY(-2px); }
+
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero section" id="topo" aria-label="Cabeçalho">
+    <div class="container hero-wrap">
+      <div>
+        <h1>Aprenda a <b style="color:#F97316;">FATURAR</b> mais de 
+  <span style="color:#16a34a; font-weight:900;">
+  R$5.000 </span> <br>por mês vendendo a pipoca no balde que viralizou no TikTok</h1>
+        <p class="muted">A nova versão do <strong>“morango do amor”</strong> chegou. <br>E tem gente <strong>FATURANDO MUITO!</strong></p>
+        <p style="margin:18px 0 0">
+          <a class="btn" href="https://pay.cakto.com.br/39ggyvz_535377" aria-label="Quero começar agora">QUERO FATURAR MAIS DE R$5.000</a>
+        </p>
+      </div>
+      <div>
+        <div class="hero-media" role="img" aria-label="Imagem/vídeo de pessoa segurando balde de pipoca gourmet">
+          <!-- Substitua por <img src="sua-imagem.jpg" alt="Balde de pipoca gourmet"> ou vídeo -->
+          <small><img src="Screenshot 2025-08-20 163349.png"></small>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- OPORTUNIDADE -->
+  <section class="section" id="prova">
+  <div class="container">
+    <h2 class="proof-title">A Oportunidade Viral</h2>
+    <p class="proof-sub">O que começou em <strong>Goiânia</strong> já está se espalhando pelo Brasil. Quem entrar <strong>agora</strong> fatura antes da multidão copiar.</p>
+
+    <!-- Carrossel no mobile (scroll-snap) / grid no desktop -->
+    <div class="proof-track">
+      <!-- Card 1 -->
+      <article class="social-card">
+        <div class="media">
+          <!-- Use print/screenshot grande do TikTok ou Reels -->
+          <img src="/Screenshot 2025-08-20 180239.png" alt="Print TikTok com muitos views">
+          <div class="badges">
+            <span class="badge">61,3K likes</span>
+            <span class="badge">688 comentários</span>
+          </div>
+        </div>
+        <div class="content">
+          <p class="quote">“Comecei a vender e estou faturando demais aqui na minha cidade.”</p>
+          <p class="meta">Comentário real em vídeo da pipoca viral</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="social-card">
+        <div class="media">
+          <img src="/Screenshot 2025-08-20 163349.png" alt="Print TikTok com muitos views">
+          <div class="badges">
+            <span class="badge">240K views</span>
+            <span class="badge">Compartilhamentos</span>
+          </div>
+        </div>
+        <div class="content">
+          <p class="quote">“Essa pipoca é MUITO gostosa! Virou febre no shopping.”</p>
+          <p class="meta">Feedback em post viral</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="social-card">
+        <div class="media">
+          <img src="/Screenshot 2025-08-20 201812.png" alt="Print TikTok com muitos views">
+          <div class="badges">
+            <span class="badge">Explodindo no TikTok</span>
+            <span class="badge">Trend ativa</span>
+          </div>
+        </div>
+        <div class="content">
+          <p class="quote">“Estão pagando caro e FATURANDO MUITO!”</p>
+          <p class="meta">Comentário em um vídeo da Pipoca Viral viralizado no TikTok</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- CTA opcional abaixo da prova social -->
+     <div class="bonus-cta">
+      <a href="https://pay.cakto.com.br/39ggyvz_535377" class="btn big">QUERO APROVEITAR A TENDÊNCIA</a>
+    </div>
+  </div>
+</section>
+
+<section class="section destaque" id="apresentacao-guia" style="background:#fffbea; padding:60px 20px; border-radius:12px; margin:40px 0;">
+  <div class="container" style="max-width:900px; text-align:center; margin:0 auto;">
+    
+    <h2 style="font-size:2.2rem; font-weight:800; color:#222; margin-bottom:20px;">
+      Transforme a Pipoca Viral do TikTok em uma <span style="color:#e63946;">fonte de renda real</span>
+    </h2>
+    
+    <p style="font-size:1.2rem; line-height:1.6; color:#333; margin-bottom:15px;">
+      O que começou como uma tendência divertida já virou <strong>negócio lucrativo em várias cidades do Brasil</strong>.
+    </p>
+    
+    <p style="font-size:1.2rem; line-height:1.6; color:#333; margin-bottom:15px;">
+      Pessoas comuns estão aproveitando essa onda e conquistando uma renda extra de verdade — 
+      algumas já faturando mais de <strong style="color:#2a9d8f;">R$5.000 por mês</strong>.
+    </p>
+    
+    <p style="font-size:1.2rem; line-height:1.6; color:#333; margin-bottom:30px;">
+      Para encurtar o seu caminho, criamos um <strong>Guia prático e direto ao ponto</strong>, feito para quem quer entrar agora nessa tendência e não ficar para trás.
+    </p>
+    
+  </div>
+</section>
+
+
+<style>
+  #problema ul {
+    margin: 16px 0;
+    padding-left: 18px;
+  }
+  #problema ul li {
+    margin-bottom: 6px;
+    font-size: 1.05rem;
+  }
+  #problema .highlight {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #16a34a; /* verde de destaque */
+  }
+</style>
+
+
+  <!-- BENEFÍCIOS -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <h2>O QUE VOCÊ VAI DOMINAR COM O NOSSO GUIA:</h2>
+      <div class="bullets">
+        <div class="item"><div class="dot">✓</div><div>Receita da Pipoca Viral do TikTok para<strong> FATURAR MAIS DE R$5.000 POR MÊS</strong></div></div>
+        <div class="item"><div class="dot">✓</div><div>O passo a passo de como fazer a <strong> Pipoca Viral do Tiktok</strong></div></div>
+        <div class="item"><div class="dot">✓</div><div>Recomendações de produtos como <strong>Pipoca, açucar e chocolates</strong> mais baratos e ideais para fazer a Pipoca Viral do TikTok</div></div>
+        <div class="item"><div class="dot">✓</div><div>Como vender pelo <strong>iFood, Rappi</strong> e redes sociais.</div></div>
+        <div class="item"><div class="dot">✓</div><div>Reiventar novos sabores <strong> Doces e Salgados</strong></div></div>
+        <div class="item"><div class="dot">✓</div><div>Estratégias para atrair clientes e<strong> FATURAR DE VERDADE!</strong>.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA & GARANTIA -->
+  <section class="section" id="oferta">
+  <div class="container">
+    <div class="offer-card">
+
+      <!-- Título centralizado e destacado -->
+      <h2 class="offer-title">O QUE VOCÊ RECEBERÁ</h2>
+
+      <ul class="checks">
+        <li><strong>Guia da Renda com a Pipoca Viral do TikTok</strong> — Receita e como faturar mais de <strong>R$5.000</strong> por mês com a Pipoca Viral do TikTok</li>
+        <li><strong>Montagem do balde premium</strong> — Camadas, recheios, acabamento e visual que vende.</li>
+        <li><strong>Precificação</strong> — Custos reais (R$14–20), posicionamento premium e tabelas de referência.</li>
+        <li><strong>Vendas</strong> — Delivery e redes sociais (o caminho para escalar).</li>
+        <li><strong>Recomendações de produtos</strong> — Todos os produtos e de baixo custo para fazer a Pipoca no Balde do TikTok.</li>
+      </ul>
+
+      <!-- Preço destacado -->
+      <div class="price-highlight">
+        <p><strong>APROVEITE O NOSSO PREÇO PROMOCIONAL</strong></p>
+        <p>
+          <span class="old">R$69,90</span>
+          <span class="now">R$19,90</span>
+        </p>
+      </div>
+
+      <!-- Texto centralizado -->
+      <p class="muted micro center">Acesso imediato • Conteúdo direto ao ponto</p>
+
+      <!-- Botões centralizados -->
+      <div class="cta-row">
+        <a class="btn" href="https://pay.cakto.com.br/39ggyvz_535377">QUERO FATURAR MAIS DE R$5.000</a>
+      </div>
+
+      <p class="muted guarantee">🔒 Garantia incondicional de 7 dias — se não curtir, devolvemos 100%.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- BÔNUS -->
+  <section class="section" id="bonus">
+  <div class="container">
+    <h2 class="bonus-title">🎁Bônus Exclusivos <span>(GRÁTIS hoje)</span></h2>
+
+    <div class="bonus-grid">
+      <!-- Bônus 1 -->
+      <article class="bonus-card">
+        <div class="bonus-media">
+          <img src="/Modern Neutral Digital Product Computer Mockup Promotional Instagram Post.png" alt="Templates Prontos no Canva">
+        </div>
+        <div class="bonus-content">
+          <h3>Templates Prontos (Canva)</h3>
+          <p>Posts e stories editáveis para divulgar rápido e de forma profissional, mesmo sem ser um.</p>
+        </div>
+      </article>
+
+      <!-- Bônus 2 -->
+      <article class="bonus-card alt">
+        <div class="bonus-media">
+          <img src="/Lista de 20 sabores premium.png" alt="Lista de 20 Sabores Premium">
+        </div>
+        <div class="bonus-content">
+          <h3>Lista de 20 Sabores Premium</h3>
+          <p>Combinações irresistíveis para variar e vender mais.</p>
+        </div>
+      </article>
+
+      <!-- Bônus 3 -->
+      <article class="bonus-card">
+        <div class="bonus-media">
+          <img src="/Post para Instagram Frase Motivacional Aesthetic.png" alt="Roteiros & Estratégias de Postagem">
+        </div>
+        <div class="bonus-content">
+          <h3>Roteiros & Estratégias de Postagem</h3>
+          <p> Guia prático para divulgar e vender sua pipoca gourmet no Instagram e TikTok</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="bonus-note">
+      <strong>Valor total estimado: R$197</strong> — hoje, <strong>GRÁTIS</strong> com sua compra.
+    </p>
+
+    <!-- Botão de CTA -->
+    <div class="bonus-cta">
+      <a href="https://pay.cakto.com.br/39ggyvz_535377" class="btn big">QUERO GARANTIR MEUS BÔNUS + GUIA</a>
+    </div>
+    
+  </div>
+</section>
+
+ <!-- PROVA/AUTORIDADE -->
+  <section class="section feedback-wall" id="feedbacks">
+  <div class="container">
+    <h2 class="fb-title">
+      Muitas pessoas já aplicaram o guia, e <span>isso é o que eles têm a dizer…</span>
+    </h2>
+    <p class="fb-hint">↔️ Arraste para o lado</p>
+
+    <!-- Carrossel no mobile / Grid desktop -->
+    <div class="fb-track">
+      <figure class="fb-card">
+        <img src="/Screenshot 2025-08-21 092108.png" alt="Feedback no WhatsApp">
+      </figure>
+
+      <figure class="fb-card">
+        <img src="/Screenshot 2025-08-21 094624.png" alt="Feedback no WhatsApp">
+      </figure>
+
+    
+      <figure class="fb-card fb-wide">
+        <img src="/Screenshot 2025-08-21 094528.png" alt="Feedback destacado">
+      </figure>
+    </div>
+
+    <div class="fb-cta">
+      <a href="#comprar" class="btn big">QUERO TER RESULTADOS ASSIM TAMBÉM</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- FAQ -->
+  <section class="section" id="faq" aria-label="Perguntas Frequentes">
+    <div class="container">
+      <h2>❓Perguntas Frequentes</h2>
+      <div class="grid" style="gap:12px;margin-top:12px">
+        <details>
+          <summary>Como vou ter acesso ao guia?</summary>
+          <p>Após finalizar a compra, você receberá um acesso em seu e-mail e poderá iniciar ainda hoje pelo seu próprio celular. Conte com a nossa equipe de suporte para te auxiliar nesse processo.</p>
+        </details>
+        <details>
+          <summary>Preciso ter experiência em culinária?</summary>
+          <p><strong>Não.</strong> O guia é passo a passo e mostra o processo completo de preparo e montagem premium, sem a necessidade de ter experiência em culinária.</p>
+        </details>
+         <details>
+          <summary>Consigo fazer essa renda de R$5.000 da minha casa?</summary>
+          <p><strong>Com certeza!</strong> Você consegue faturar mais de R$5.000 com a Pipoca Viral do TikTok fazendo na sua casa. O guia te auxiliará em todo o processo.</p>
+        </details>
+        <details>
+          <summary>Dá para começar com pouco dinheiro?</summary>
+          <p> <strong>Com certeza.</strong> Os insumos são acessíveis e o guia recomenda todos os produtos bons e de baixo custo.</p>
+        </details>
+        <details>
+          <summary>Posso vender pelo iFood/99Food/Rappi?</summary>
+          <p><strong>Sim.</strong> Há orientações práticas sobre delivery e redes sociais para você escalar as vendas.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-center" id="comprar">
+    <div class="container">
+      <h2>Pronto para lançar sua renda extra com a pipoca viral?</h2>
+      <p class="muted">Oferta de lançamento com bônus <strong>limitados</strong>. Garanta enquanto o preço está especial.</p>
+      <p><a class="btn" href="https://pay.cakto.com.br/39ggyvz_535377">QUERO MINHA RENDA EXTRA COM A PIPOCA VIRAL!</a></p>
+       <a class="btn alt" href="https://wa.link/ozxx3a">Tirar dúvidas</a>
+      <p class="muted" style="font-size:.95rem;margin-top:8px">Compra 100% segura • Acesso imediato • Garantia 7 dias</p>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      © 2025 Método Pipoca Viral — Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script>
+    // Scroll suave para âncoras internas (acessibilidade + UX)
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id=a.getAttribute('href');
+        if(id.length>1){
+          const el=document.querySelector(id);
+          if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}); }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
